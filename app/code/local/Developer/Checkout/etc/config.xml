@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Developer_Checkout>
+            <version>0.1.0</version>
+        </Developer_Checkout>
+    </modules>
+    <global>
+        <models>
+            <developer_checkout>
+                <class>Developer_Checkout_Model</class>
+            </developer_checkout>
+        </models>
+        <blocks>
+            <developer_checkout>
+                <class>Developer_Checkout_Block</class>
+            </developer_checkout>
+        </blocks>
+        <helpers>
+            <developer_checkout>
+                <class>Developer_Checkout_Helper</class>
+            </developer_checkout>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <developer_checkout before="Mage_Checkout">Developer_Checkout</developer_checkout>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+</config>
