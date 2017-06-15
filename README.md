@@ -6,5 +6,5 @@ Magento Developer Tools
 Allows to work with success page without a need to go through entire checkout flow again and again
 
 ```
-https://<domain>/checkout/onepage/success/order_id/<order_id>
+https://<domain>/checkout/onepage/testsuccess/order_id/<order_id>
 ```
